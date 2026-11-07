@@ -60,7 +60,7 @@ GET http://你的服务器:8787/send?key=你的key&title=服务器告警&desp=CP
 {"app_id": "wxXXXX", "app_secret": "XXXX", "template_id": "XXXX"}
 
 # keys.json
-{"我的key": {"openid": "oXXXX", "name": "德轩"}}
+{"我的key": {"openid": "oXXXX", "name": "示例用户"}}
 
 python3 方糖服务.py
 ```
