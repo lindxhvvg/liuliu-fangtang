@@ -1,0 +1,17 @@
+[Unit]
+Description=六六方糖 · 自建推送服务
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/fangtang
+ExecStart=/usr/bin/python3 /home/ubuntu/fangtang/方糖服务.py
+Restart=always
+RestartSec=5
+# 轻量化限制：内存 50MB 封顶（2G 服务器上不影响量化引擎）
+MemoryMax=50M
+CPUQuota=10%
+
+[Install]
+WantedBy=multi-user.target
